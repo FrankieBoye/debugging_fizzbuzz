@@ -1,12 +1,18 @@
 class FizzBuzz
-  def play(max_value)
-    result = (10..value).map { |number|
+  def play(value)
+    p "hello"
+    result = (1..value).map { |number| 
+    p value
       string = ""
       string << "Fuzz" if is_divisible_by(4, number)
       string << "Buzz" if is_divisible_by(5, number)
-      string == "" ? number : new_string
+      string == "" ? number : string
+      p number
     }
-    stringity(result)
+  
+    stringify(result)
+    
+    
   end
 
   private
